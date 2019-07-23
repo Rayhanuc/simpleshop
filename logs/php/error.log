@@ -1,3 +1,19 @@
 [22-Jul-2019 12:47:44 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
 [22-Jul-2019 12:47:46 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
 [22-Jul-2019 12:47:47 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[22-Jul-2019 17:14:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function simpleshop_hsl_hex() in /app/public/wp-content/themes/simpleshop/functions.php:136
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): simpleshop_setup('')
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /app/public/wp-settings.php(509): do_action('after_setup_the...')
+#4 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#5 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#6 /app/public/wp-admin/admin.php(34): require_once('/app/public/wp-...')
+#7 /app/public/wp-admin/themes.php(10): require_once('/app/public/wp-...')
+#8 {main}
+  thrown in /app/public/wp-content/themes/simpleshop/functions.php on line 136
+[22-Jul-2019 17:37:26 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/themes/simpleshop/functions.php on line 86
+[23-Jul-2019 04:21:41 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[23-Jul-2019 04:21:41 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[23-Jul-2019 04:21:42 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569

@@ -1,2 +1,4 @@
 [22-Jul-2019 12:43:50] NOTICE: fpm is running, pid 16
 [22-Jul-2019 12:43:51] NOTICE: ready to handle connections
+[22-Jul-2019 18:27:09] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[22-Jul-2019 18:42:48] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
