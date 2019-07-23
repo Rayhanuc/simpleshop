@@ -1,6 +1,7 @@
 <?php
 
 include_once get_theme_file_path( '/inc/customizer/class-kirki-installer-section.php' );
+include_once get_theme_file_path( '/inc/customizer/customizer-main.php' );
 
 if (!function_exists('simpleshop_setup')):
 
