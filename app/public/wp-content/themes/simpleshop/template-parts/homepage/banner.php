@@ -1,4 +1,7 @@
 <!--hero section start-->
+<?php
+
+?>
 <div id="home">
     <section class="hero js_full_height base-gradient- " style="background-image: url('<?php echo get_template_directory_uri() ; ?>/assets/img/hero.jpg');">
         <div class="hero-content">
@@ -15,4 +18,7 @@
         </div>
     </section>
 </div>
+<?php
+
+?>
 <!--hero section end-->

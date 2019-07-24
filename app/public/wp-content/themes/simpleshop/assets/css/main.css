@@ -2909,3 +2909,7 @@ responsive
         text-align: left;
     }
 }
+
+.space-2 .social-links a i {
+    line-height: 35px;
+}
