@@ -19,6 +19,7 @@ if(class_exists('Kirki')){
         'title'          => esc_html__( 'Homepage Settings', 'simpleshop' ),
         'panel'          => SIMPLESHOP_CUSTOMIZER_PANEL_ID,
         'priority'       => 160,
+        
     ) );
 
     Kirki::add_field( SIMPLESHOP_CUSTOMIZER_CONFIG_ID, [
