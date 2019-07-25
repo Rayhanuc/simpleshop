@@ -30,3 +30,15 @@ Stack trace:
 #6 {main}
   thrown in /app/public/wp-includes/theme.php on line 901
 
+2019-07-25T17:25:11+00:00 CRITICAL Uncaught Error: Call to undefined function do_shotcode() in /app/public/wp-content/themes/simpleshop/template-parts/homepage/products.php:18
+Stack trace:
+#0 /app/public/wp-includes/template.php(724): require()
+#1 /app/public/wp-includes/template.php(671): load_template('/app/public/wp-...', false)
+#2 /app/public/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /app/public/wp-content/themes/simpleshop/page-templates/homepage.php(13): get_template_part('template-parts/...')
+#4 /app/public/wp-includes/template-loader.php(78): include('/app/public/wp-...')
+#5 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#6 /app/public/index.php(17): require('/app/public/wp-...')
+#7 {main}
+  thrown in /app/public/wp-content/themes/simpleshop/template-parts/homepage/products.php on line 18
+
