@@ -42,10 +42,53 @@ if(class_exists('Kirki')){
     Kirki::add_field( SIMPLESHOP_CUSTOMIZER_CONFIG_ID, [
         'type'     => 'text',
         'settings' => 'simpleshop_homepage_categories_title',
-        'label'    => esc_html__( 'Text Control', 'simpleshop' ),
+        'label'    => esc_html__( 'Categories Section Title', 'simpleshop' ),
         'section'  => 'simpleshop_homepage',
         'default'  => esc_html__( 'Shop By Category', 'simpleshop' ),
         'priority' => 10,
+        'active_callback'=> [
+            [
+                'setting'=>'simpleshop_homepage_display_categories',
+                'operator'=>'==',
+                'value'=> true,
+            ]
+        ]
+    ] );
+
+    Kirki::add_field( SIMPLESHOP_CUSTOMIZER_CONFIG_ID, [
+        'type'        => 'switch',
+        'settings'    => 'simpleshop_homepage_display_categories_number',
+        'label'       => esc_html__( 'Display Numbers Beside Category', 'simpleshop' ),
+        'section'     => 'simpleshop_homepage',
+        'default'     => '1',
+        'priority'    => 10,
+        'choices'     => [
+            'on'  => esc_html__( 'Display', 'simpleshop' ),
+            'off' => esc_html__( 'Hide', 'simpleshop' ),
+        ],
+        'active_callback'=> [
+            [
+                'setting'=>'simpleshop_homepage_display_categories',
+                'operator'=>'==',
+                'value'=> true,
+            ]
+        ]
+    ] );
+
+    Kirki::add_field( SIMPLESHOP_CUSTOMIZER_CONFIG_ID, [
+        'type'     => 'text',
+        'settings' => 'simpleshop_homepage_categories_col',
+        'label'    => esc_html__( 'Category Number of Columns', 'simpleshop' ),
+        'section'  => 'simpleshop_homepage',
+        'default'  => 3,
+        'priority' => 10,
+        'active_callback'=> [
+            [
+                'setting'=>'simpleshop_homepage_display_categories',
+                'operator'=>'==',
+                'value'=> true,
+            ]
+        ]
     ] );
     // categories section end
     
@@ -71,6 +114,13 @@ if(class_exists('Kirki')){
         'section'  => 'simpleshop_homepage',
         'default'  => esc_html__( 'New Arrival', 'simpleshop' ),
         'priority' => 10,
+        'active_callback'=> [
+            [
+                'setting'=>'simpleshop_homepage_display_products',
+                'operator'=>'==',
+                'value'=> true,
+            ]
+        ]
     ] );
 
     Kirki::add_field( SIMPLESHOP_CUSTOMIZER_CONFIG_ID, [
@@ -79,6 +129,13 @@ if(class_exists('Kirki')){
         'label'    => esc_html__( 'New Arrival Section Sub-Title', 'simpleshop' ),
         'section'  => 'simpleshop_homepage',
         'priority' => 10,
+        'active_callback'=> [
+            [
+                'setting'=>'simpleshop_homepage_display_products',
+                'operator'=>'==',
+                'value'=> true,
+            ]
+        ]
     ] );
     // products section end    
 
@@ -103,6 +160,13 @@ if(class_exists('Kirki')){
         'section'  => 'simpleshop_homepage',
         'default'  => esc_html__( 'Sale', 'simpleshop' ),
         'priority' => 10,
+        'active_callback'=> [
+            [
+                'setting'=>'simpleshop_homepage_display_promo',
+                'operator'=>'==',
+                'value'=> true,
+            ]
+        ]
     ] );
     // promo section end
 
@@ -127,6 +191,13 @@ if(class_exists('Kirki')){
         'section'  => 'simpleshop_homepage',
         'default'  => esc_html__( 'Popular Product', 'simpleshop' ),
         'priority' => 10,
+        'active_callback'=> [
+            [
+                'setting'=>'simpleshop_homepage_display_popular_product',
+                'operator'=>'==',
+                'value'=> true,
+            ]
+        ]
     ] );
     // Popular Product section end
 
@@ -151,6 +222,14 @@ if(class_exists('Kirki')){
         'section'  => 'simpleshop_homepage',
         'default'  => esc_html__( 'Offer', 'simpleshop' ),
         'priority' => 10,
+        'active_callback'=> [
+            [
+                'setting'=>'simpleshop_homepage_display_offer',
+                'operator'=>'==',
+                'value'=> true,
+            ]
+        ]
+
     ] ); */
 
     // offer section end
@@ -176,6 +255,45 @@ if(class_exists('Kirki')){
         'section'  => 'simpleshop_homepage',
         'default'  => esc_html__( 'Simple Shop on Flickr', 'simpleshop' ),
         'priority' => 10,
+        'active_callback'=> [
+            [
+                'setting'=>'simpleshop_homepage_display_flickr',
+                'operator'=>'==',
+                'value'=> true,
+            ]
+        ]
     ] );
     // Flickr section end
+
+    // Footer section start
+    Kirki::add_field( SIMPLESHOP_CUSTOMIZER_CONFIG_ID, [
+        'type'        => 'switch',
+        'settings'    => 'simpleshop_homepage_display_footer_section',
+        'label'       => esc_html__( 'Display Footer Section', 'simpleshop' ),
+        'section'     => 'simpleshop_homepage',
+        'default'     => '1',
+        'priority'    => 10,
+        'choices'     => [
+            'on'  => esc_html__( 'Display', 'simpleshop' ),
+            'off' => esc_html__( 'Hide', 'simpleshop' ),
+        ],
+    ] );
+
+    /* Kirki::add_field( SIMPLESHOP_CUSTOMIZER_CONFIG_ID, [
+        'type'     => 'text',
+        'settings' => 'simpleshop_homepage_footer_title',
+        'label'    => esc_html__( 'Text Control of Flickr', 'simpleshop' ),
+        'section'  => 'simpleshop_homepage',
+        'default'  => esc_html__( 'Simple Shop on Flickr', 'simpleshop' ),
+        'priority' => 10,
+        'active_callback'=> [
+            [
+                'setting'=>'simpleshop_homepage_display_footer_section',
+                'operator'=>'==',
+                'value'=> true,
+            ]
+        ]
+    ] ); */
+
+    // Footer section end
 }

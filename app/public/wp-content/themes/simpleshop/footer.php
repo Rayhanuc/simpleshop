@@ -1,4 +1,7 @@
 <!-- Footer section start from here -->
+<?php
+if(get_theme_mod('simpleshop_homepage_display_footer_section',true)):
+?>
 <footer class="space-2 ">
     <div class="container">
         <div class="row justify-content-center">
@@ -20,7 +23,9 @@
         </div>
     </div>
 </footer>
-
+<?
+endif;
+?>
 <?php wp_footer();?>
 
 </body>

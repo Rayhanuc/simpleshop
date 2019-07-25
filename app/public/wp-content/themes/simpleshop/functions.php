@@ -7,7 +7,6 @@ if (!function_exists('simpleshop_setup')):
 
     function simpleshop_setup()
 {
-
         load_theme_textdomain('simpleshop', get_template_directory() . '/languages');
 
         add_theme_support('automatic-feed-links');
@@ -117,4 +116,12 @@ function simpleshop_assets() {
 }
 add_action('wp_enqueue_scripts', 'simpleshop_assets');
 
-
+function shimpleshop_subcategory_count_html($markup){
+    if (get_theme_mod('simpleshop_homepage_display_categories_number') !='1') {
+        return '';
+    }
+    return $markup;
+}
+add_filter('woocommerce_subcategory_count_html','shimpleshop_subcategory_count_html');
+/* if (get_theme_mod('simpleshop_homepage_display_categories_number') !='1') {
+} */

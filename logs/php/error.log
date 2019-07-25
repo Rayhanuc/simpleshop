@@ -30,3 +30,32 @@ Stack trace:
 #6 /app/public/index.php(17): require('/app/public/wp-...')
 #7 {main}
   thrown in /app/public/wp-content/themes/simpleshop/template-parts/homepage/product-category.php on line 10
+[25-Jul-2019 16:12:39 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function get_theme_mod(), 0 passed in /app/public/wp-content/themes/simpleshop/functions.php on line 119 and at least 1 expected in /app/public/wp-includes/theme.php:901
+Stack trace:
+#0 /app/public/wp-content/themes/simpleshop/functions.php(119): get_theme_mod()
+#1 /app/public/wp-settings.php(499): include('/app/public/wp-...')
+#2 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#3 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#4 /app/public/wp-admin/admin-ajax.php(22): require_once('/app/public/wp-...')
+#5 {main}
+  thrown in /app/public/wp-includes/theme.php on line 901
+[25-Jul-2019 16:12:39 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function get_theme_mod(), 0 passed in /app/public/wp-content/themes/simpleshop/functions.php on line 119 and at least 1 expected in /app/public/wp-includes/theme.php:901
+Stack trace:
+#0 /app/public/wp-content/themes/simpleshop/functions.php(119): get_theme_mod()
+#1 /app/public/wp-settings.php(499): include('/app/public/wp-...')
+#2 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#3 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#4 /app/public/wp-admin/admin.php(34): require_once('/app/public/wp-...')
+#5 /app/public/wp-admin/customize.php(13): require_once('/app/public/wp-...')
+#6 {main}
+  thrown in /app/public/wp-includes/theme.php on line 901
+[25-Jul-2019 16:14:23 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function get_theme_mod(), 0 passed in /app/public/wp-content/themes/simpleshop/functions.php on line 119 and at least 1 expected in /app/public/wp-includes/theme.php:901
+Stack trace:
+#0 /app/public/wp-content/themes/simpleshop/functions.php(119): get_theme_mod()
+#1 /app/public/wp-settings.php(499): include('/app/public/wp-...')
+#2 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#3 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#4 /app/public/wp-admin/admin.php(34): require_once('/app/public/wp-...')
+#5 /app/public/wp-admin/customize.php(13): require_once('/app/public/wp-...')
+#6 {main}
+  thrown in /app/public/wp-includes/theme.php on line 901
