@@ -1,0 +1,4 @@
+2019-07-26T05:40:50+00:00 CRITICAL syntax error, unexpected '10' (T_LNUMBER), expecting ',' or ')' in /app/public/wp-content/themes/simpleshop/functions.php on line 132
+
+2019-07-26T09:12:19+00:00 CRITICAL syntax error, unexpected '10' (T_LNUMBER), expecting ',' or ')' in /app/public/wp-content/themes/simpleshop/functions.php on line 149
+
